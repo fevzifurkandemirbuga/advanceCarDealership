@@ -247,6 +247,9 @@ public class UserInterface {
 
         SalesContract salesContract=new SalesContract(vehicleSold,date,customerName,customerEmail,financed);
 
+        ContractFileManager contractFileManager=new ContractFileManager();
+        contractFileManager.saveContract(salesContract);
+
 
     }
 
@@ -265,6 +268,9 @@ public class UserInterface {
         String customerEmail=scan.nextLine();
 
         LeaseContract leaseContract=new LeaseContract(vehicleSold,date,customerName,customerEmail);
+
+        ContractFileManager contractFileManager=new ContractFileManager();
+        contractFileManager.saveContract(leaseContract);
 
     }
 

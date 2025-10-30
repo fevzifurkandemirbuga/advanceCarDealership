@@ -3,8 +3,8 @@ package com.pluralsight;
 public class SalesContract extends Contract{
 
 
-    private double salesTax=0.05;
-    private double recordingFee=100.00;
+    private double salesTax;
+    private double recordingFee;
     private double processingFee;
     private boolean financed;
 
@@ -13,6 +13,8 @@ public class SalesContract extends Contract{
 
 
         super(vehicleSold, date, customerName, customerEmail);
+        this.salesTax=vehicleSold.getPrice()*0.05;
+        this.recordingFee=100;
         this.financed = financed;
         this.processingFee=(vehicleSold.getPrice()<10000 ? 295 : 495);
     }
@@ -23,6 +25,32 @@ public class SalesContract extends Contract{
 
     public void setFinance(boolean finance) {
         this.financed = finance;
+    }
+
+
+
+    public double getProcessingFee() {
+        return processingFee;
+    }
+
+    public void setProcessingFee(double processingFee) {
+        this.processingFee = processingFee;
+    }
+
+    public double getRecordingFee() {
+        return recordingFee;
+    }
+
+    public void setRecordingFee(double recordingFee) {
+        this.recordingFee = recordingFee;
+    }
+
+    public double getSalesTax() {
+        return salesTax;
+    }
+
+    public void setSalesTax(double salesTax) {
+        this.salesTax = salesTax;
     }
 
     @Override
