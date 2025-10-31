@@ -62,4 +62,15 @@ public abstract class Contract {
     public void setMonthlyPayment(double monthlyPayment) {
         this.monthlyPayment = monthlyPayment;
     }
+
+    @Override
+    public String toString() {
+        return
+                "\ndate='" + date + '\'' +
+                "\ncustomerName='" + customerName + '\'' +
+                "\ncustomerEmail='" + customerEmail + '\'' +
+                "\ntotalPrice=" + totalPrice +
+                "\nmonthlyPayment=" + monthlyPayment +
+                "\nvehicleSold=" + vehicleSold;
+    }
 }

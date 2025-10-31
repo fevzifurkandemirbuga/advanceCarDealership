@@ -1,20 +1,18 @@
-vin|year|make|model|vehicleType|color|odometer|price
-308038|2021|Nissan|Elantra|Sedan|White|137166|10273.79
-393189|2021|Chevrolet|Sportage|SUV|Green|25616|49074.49
+vin|year|make|model|vehicleType|color|odometer|price393189|2021|Chevrolet|Sportage|SUV|Green|25616|49074.49
 917477|2015|Chevrolet|Sportage|Sedan|Yellow|151145|71024.07
 128714|2013|Nissan|Elantra|Coupe|Silver|38666|57883.12
 424041|2021|Mercedes-Benz|Sportage|Hatchback|Red|24684|74793.75
 123498|2024|Chevrolet|Jetta|Sedan|Yellow|199923|26636.98
 300521|2006|Honda|C-Class|Convertible|Silver|125328|5167.74
 593655|2018|BMW|3 Series|Truck|Silver|191388|42287.71
-513172|2014|Mercedes-Benz|Elantra|Truck|Gray|169041|19944.6
-716174|2006|Volkswagen|Jetta|Sedan|Gray|57502|61921.5
+513172|2014|Mercedes-Benz|Elantra|Truck|Gray|169041|19944.60
+716174|2006|Volkswagen|Jetta|Sedan|Gray|57502|61921.50
 801034|2016|Mercedes-Benz|Jetta|Coupe|Red|149519|9402.75
 170743|2011|BMW|Sportage|Convertible|White|78187|19426.27
-804369|2020|BMW|Civic|Hatchback|Silver|137574|58533.5
+804369|2020|BMW|Civic|Hatchback|Silver|137574|58533.50
 292903|2014|BMW|Camaro|Convertible|Blue|138788|22880.77
 256819|2007|Kia|3 Series|Hatchback|Silver|32621|15412.83
-737737|2018|Toyota|F-150|Truck|Silver|7195|66405.3
+737737|2018|Toyota|F-150|Truck|Silver|7195|66405.30
 492328|2019|Honda|Altima|Convertible|Green|14507|17081.32
 260235|2008|Nissan|C-Class|Convertible|Red|112742|33764.61
 573506|2011|Mercedes-Benz|Camaro|Coupe|Green|30790|47694.71
@@ -26,28 +24,28 @@ vin|year|make|model|vehicleType|color|odometer|price
 129714|2022|BMW|Camaro|Coupe|Black|147520|48765.42
 668865|2007|Volkswagen|Camaro|Hatchback|Black|198615|14578.69
 896114|2012|Volkswagen|F-150|Truck|Silver|147699|56694.84
-629978|2018|BMW|Civic|Sedan|Gray|174841|69329.0
+629978|2018|BMW|Civic|Sedan|Gray|174841|69329.00
 599196|2009|Chevrolet|F-150|Coupe|Red|199848|42107.56
 426310|2020|Hyundai|F-150|SUV|Silver|116489|79391.95
 666470|2022|Mercedes-Benz|Elantra|Truck|Blue|90502|79312.29
-492945|2005|Honda|Elantra|Convertible|Green|125004|13669.6
+492945|2005|Honda|Elantra|Convertible|Green|125004|13669.60
 338667|2024|Toyota|Jetta|Truck|Red|36494|6667.05
 687138|2014|Nissan|Jetta|Truck|White|111102|33057.03
 819861|2019|Chevrolet|Altima|SUV|Blue|28687|10126.38
 383028|2006|Kia|Civic|Sedan|Green|164767|28240.89
 549091|2005|Nissan|3 Series|SUV|Gray|154681|44585.29
-200985|2008|Chevrolet|3 Series|SUV|White|120574|17097.4
-495586|2013|Nissan|Civic|Convertible|Red|142253|25363.8
+200985|2008|Chevrolet|3 Series|SUV|White|120574|17097.40
+495586|2013|Nissan|Civic|Convertible|Red|142253|25363.80
 592866|2015|Kia|Sportage|Sedan|Gray|20292|60421.14
 530685|2005|BMW|Altima|SUV|Blue|186084|56760.77
 449747|2020|Volkswagen|Altima|SUV|Blue|149086|72221.46
 371782|2015|Volkswagen|C-Class|SUV|Black|172659|59647.58
 685006|2007|Nissan|3 Series|Coupe|Yellow|89770|76311.24
 210216|2010|Nissan|Civic|Sedan|White|140733|55842.49
-798201|2019|Chevrolet|Sportage|Sedan|Black|166891|7394.4
+798201|2019|Chevrolet|Sportage|Sedan|Black|166891|7394.40
 787093|2010|Ford|Civic|Truck|Green|44476|6029.54
 561892|2019|Kia|Altima|Sedan|Red|57796|14131.62
-347471|2016|Mercedes-Benz|C-Class|Coupe|Blue|94026|44599.8
+347471|2016|Mercedes-Benz|C-Class|Coupe|Blue|94026|44599.80
 710932|2012|Chevrolet|C-Class|Convertible|Red|53700|36768.77
 551299|2021|Chevrolet|Sportage|Convertible|Black|145238|55862.04
 604512|2018|BMW|Sportage|Hatchback|Gray|2994|26530.18
@@ -56,8 +54,8 @@ vin|year|make|model|vehicleType|color|odometer|price
 678585|2006|Toyota|Altima|Sedan|Red|199775|16823.89
 555738|2006|Kia|F-150|Coupe|Silver|77866|41135.98
 585019|2014|Kia|Corolla|SUV|Gray|85916|48956.25
-606253|2024|Ford|3 Series|Truck|Yellow|95364|49796.5
-188517|2024|Hyundai|Civic|Sedan|Silver|160268|33223.8
+606253|2024|Ford|3 Series|Truck|Yellow|95364|49796.50
+188517|2024|Hyundai|Civic|Sedan|Silver|160268|33223.80
 945787|2006|BMW|C-Class|Coupe|Yellow|88355|9777.35
 730817|2010|Kia|Jetta|Sedan|White|78054|9618.83
 375213|2022|Toyota|Jetta|SUV|Gray|154286|54484.87
@@ -71,16 +69,16 @@ vin|year|make|model|vehicleType|color|odometer|price
 214524|2019|Chevrolet|3 Series|Hatchback|Black|39798|52707.39
 268086|2010|Ford|Jetta|Hatchback|Yellow|93261|35046.32
 645687|2010|Mercedes-Benz|Civic|Convertible|Green|7276|6897.09
-425314|2022|Toyota|Corolla|Convertible|Red|99135|11143.6
+425314|2022|Toyota|Corolla|Convertible|Red|99135|11143.60
 592844|2018|Hyundai|Civic|Truck|White|79786|7676.53
-566681|2008|Ford|3 Series|SUV|Blue|6354|26840.2
+566681|2008|Ford|3 Series|SUV|Blue|6354|26840.20
 718746|2019|Volkswagen|F-150|Sedan|Green|148184|59029.02
 692318|2007|Honda|F-150|Convertible|Yellow|7789|27066.92
 520208|2015|Hyundai|Elantra|Hatchback|Silver|179547|8098.51
 522657|2024|Nissan|Jetta|Coupe|White|80770|7868.81
 229056|2017|Hyundai|Corolla|Hatchback|Silver|83899|59584.06
 337097|2011|Toyota|Altima|Hatchback|Silver|89522|49533.93
-302507|2009|Chevrolet|Civic|SUV|White|148223|16934.6
+302507|2009|Chevrolet|Civic|SUV|White|148223|16934.60
 818548|2015|Hyundai|Camaro|Hatchback|Gray|23840|5226.81
 856791|2017|Toyota|Sportage|SUV|Gray|148627|79834.49
 918950|2005|Toyota|3 Series|Hatchback|Gray|111453|4337.04
@@ -96,6 +94,4 @@ vin|year|make|model|vehicleType|color|odometer|price
 325239|2024|Nissan|F-150|SUV|Red|152629|3585.63
 599296|2010|Honda|Sportage|Convertible|Yellow|28908|59197.49
 293281|2015|Nissan|C-Class|Truck|White|118966|44168.82
-227669|2010|Hyundai|Elantra|Sedan|Blue|128066|3332.9
-734549|2024|BMW|Civic|Sedan|Red|172610|35283.15
-308396|2006|Hyundai|Jetta|Convertible|White|59285|64873.74
+227669|2010|Hyundai|Elantra|Sedan|Blue|128066|3332.90

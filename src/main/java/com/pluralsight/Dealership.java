@@ -86,5 +86,12 @@ public class Dealership {
 
     }
 
+    public void addContract(Contract contract){
+        System.out.println("new contract added\n"+contract);
+        ContractFileManager contractFileManager=new ContractFileManager();
+        contractFileManager.saveContract(contract);
+    }
+
+
 
 }

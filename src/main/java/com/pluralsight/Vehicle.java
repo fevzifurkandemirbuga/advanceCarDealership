@@ -56,15 +56,13 @@ public class Vehicle {
 
     @Override
     public String toString() {
-        return "\n**************************" +
-                "\nvin: " + vin +
-                "\nyear: " + year +
-                "\nmake: '" + make + '\'' +
-                "\nmodel: '" + model + '\'' +
-                "\nvehicleType: '" + vehicleType + '\'' +
-                "\ncolor: '" + color + '\'' +
-                "\nodometer: " + odometer +
-                "\nprice: " + price +
-                "\n**************************";
+        String header = String.format("\n%-8s %-6s %-10s %-12s %-8s %-10s %-10s %-11s\n"+
+                        "──────────────────────────────────────────────────────────────────────────────────\n",
+                "VIN", "YEAR", "MAKE", "MODEL", "TYPE", "COLOR", "ODOMETER", "PRICE");
+        String data=String.format("%-8d %-6d %-10s %-12s %-8s %-10s %-10d $%,10.2f\n\n",
+                vin,year, make, model, vehicleType, color, odometer, price);
+
+
+        return header+data;
     }
 }

@@ -39,4 +39,24 @@ public class LeaseContract extends Contract {
 
         return (getTotalPrice()*1.04)/36;
     }
+
+    @Override
+    public String toString() {
+        String contractHeader = String.format("\n%-8s %-6s %-6s %-6s \n"+
+                        "──────────────────────────────────────────────────────────────────────────────────\n",
+                "CONTRACT TYPE", "DATE", "CUSTOMER NAME", "CUSTOMER EMAIL");
+        String contractData=String.format("%-4s %-6s %-6s %-6s \n",
+                "LEASE",super.getDate(),super.getCustomerName(),super.getCustomerEmail());
+
+        String leaseHeader = String.format("\n%-6s %-6s %-6s %-6s %-6s %-6s \n"+
+                        "──────────────────────────────────────────────────────────────────────────────────\n",
+                "EXPECTED ENDING VALUE", "LEASE FEE", "TOTAL PRICE","MONTHLY PAYMENT");
+        String leaseData=String.format("%-6.2f %-6.2f %-6.2f %-6.2f %-6s %-6.2f  \n",
+                expectedEndingValue,leaseFee,getTotalPrice(),getMonthlyPayment());
+
+
+        return "***********************************************************************************\n"+
+                contractData+contractData+super.getVehicleSold()+leaseHeader+leaseData+
+                "***********************************************************************************\n";
+    }
 }

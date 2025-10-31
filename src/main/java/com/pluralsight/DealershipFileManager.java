@@ -37,13 +37,16 @@ public class DealershipFileManager {
             FileWriter fileWriter = new FileWriter("inventory.csv");
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 
+            bufferedWriter.write("vin|year|make|model|vehicleType|color|odometer|price");
+
             for (Vehicle v : dealership.getAllVehicles()) {
                 String text = String.format("%d|%d|%s|%s|%s|%s|%d|%.2f",
                         v.getVin(), v.getYear(), v.getMake(), v.getModel(),
                         v.getVehicleType(), v.getColor(), v.getOdometer(), v.getPrice());
                 bufferedWriter.write(text + "\n");
-                bufferedWriter.close();
+
             }
+            bufferedWriter.close();
 
         } catch (IOException e) {
             e.printStackTrace();

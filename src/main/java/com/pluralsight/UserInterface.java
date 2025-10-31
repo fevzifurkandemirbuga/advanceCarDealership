@@ -171,11 +171,13 @@ public class UserInterface {
             if (vehicle != null) {
                 dealership.removeVehicle(vehicle);
                 new DealershipFileManager().saveDealership(dealership);
+                return;
             } else {
                 System.out.println("invalid vin number please try again");
                 return;
             }
         }
+
         System.out.print("enter year (optional): ");
         String year = scan.nextLine();
         if (!year.isEmpty()) {
@@ -246,9 +248,8 @@ public class UserInterface {
         boolean financed=scan.nextLine().equalsIgnoreCase("yes");
 
         SalesContract salesContract=new SalesContract(vehicleSold,date,customerName,customerEmail,financed);
-
-        ContractFileManager contractFileManager=new ContractFileManager();
-        contractFileManager.saveContract(salesContract);
+        System.out.println(salesContract);
+        dealership.addContract(salesContract);
 
 
     }
@@ -269,8 +270,8 @@ public class UserInterface {
 
         LeaseContract leaseContract=new LeaseContract(vehicleSold,date,customerName,customerEmail);
 
-        ContractFileManager contractFileManager=new ContractFileManager();
-        contractFileManager.saveContract(leaseContract);
+
+        dealership.addContract(leaseContract);
 
     }
 
