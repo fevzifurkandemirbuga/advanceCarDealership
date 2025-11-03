@@ -251,6 +251,11 @@ public class UserInterface {
 
         dealership.addContract(salesContract);
 
+        dealership.removeVehicle(vehicleSold);
+        new DealershipFileManager().saveDealership(dealership);
+
+
+
 
     }
 
@@ -272,6 +277,9 @@ public class UserInterface {
 
 
         dealership.addContract(leaseContract);
+
+        dealership.removeVehicle(vehicleSold);
+        new DealershipFileManager().saveDealership(dealership);
 
     }
 

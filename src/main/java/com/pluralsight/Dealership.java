@@ -83,12 +83,13 @@ public class Dealership {
 
     public void removeVehicle(Vehicle vehicle) {
         inventory.remove(vehicle);
-
     }
 
     public void addContract(Contract contract){
-        System.out.println("new contract added\n"+contract);
+        System.out.println("\n\nnew contract added\n\n"+contract);
+
         ContractFileManager contractFileManager=new ContractFileManager();
+
         contractFileManager.saveContract(contract);
     }
 
