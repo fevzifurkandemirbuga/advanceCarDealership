@@ -57,20 +57,30 @@ public class SalesContract extends Contract{
     public double getTotalPrice() {
         if(financed){
             if(super.getVehicleSold().getPrice()>10000){
-                return super.getVehicleSold().getPrice()*1.0425;
+                return (getMonthlyPayment()*48)+recordingFee+processingFee;
             }
-            return super.getVehicleSold().getPrice()*1.0525;
+            return (getMonthlyPayment()*24)+recordingFee+processingFee;
         }
-        return super.getVehicleSold().getPrice();
+        return super.getVehicleSold().getPrice()+recordingFee+processingFee;
     }
 
     @Override
     public double getMonthlyPayment() {
         if(financed){
+            double annualRate,monthlyRate;
+            int months;
             if(super.getVehicleSold().getPrice()>10000){
-                return getTotalPrice()/48;
+                annualRate=0.0425;
+                months=48;
             }
-            return getTotalPrice()/24;
+            else{
+                annualRate=0.0525;
+                months=24;
+            }
+            monthlyRate=annualRate/12;
+
+            return (super.getVehicleSold().getPrice()*monthlyRate) / (1-Math.pow(1+monthlyRate,-months));
+
         }
 
         return 0;
