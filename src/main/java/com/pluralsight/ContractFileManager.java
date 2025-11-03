@@ -1,10 +1,29 @@
 package com.pluralsight;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 public class ContractFileManager {
+
+    public void getContact(){
+        try{
+            FileReader fileReader=new FileReader("contract.csv");
+            BufferedReader bufferedReader=new BufferedReader(fileReader);
+            String line;
+
+            while((line=bufferedReader.readLine())!=null){
+
+            }
+
+
+
+
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+
+    }
 
     public void saveContract(Contract contract){
         try{

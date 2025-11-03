@@ -248,7 +248,7 @@ public class UserInterface {
         boolean financed=scan.nextLine().equalsIgnoreCase("yes");
 
         SalesContract salesContract=new SalesContract(vehicleSold,date,customerName,customerEmail,financed);
-        System.out.println(salesContract);
+
         dealership.addContract(salesContract);
 
 

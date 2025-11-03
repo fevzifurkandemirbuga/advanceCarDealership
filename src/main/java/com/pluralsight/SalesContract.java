@@ -79,22 +79,20 @@ public class SalesContract extends Contract{
     @Override
     public String toString() {
 
-        String contractHeader = String.format("\n%-8s %-6s %-6s %-6s \n"+
+        String contractHeader = String.format("\n%-14s %-11s %-14s %-6s \n"+
                         "──────────────────────────────────────────────────────────────────────────────────\n",
                 "CONTRACT TYPE", "DATE", "CUSTOMER NAME", "CUSTOMER EMAIL");
-        String contractData=String.format("%-4s %-6s %-6s %-6s \n",
+        String contractData=String.format("%-14s %-11s %-14s %-6s \n",
                 "SALE",super.getDate(),super.getCustomerName(),super.getCustomerEmail());
 
-        String saleHeader = String.format("\n%-11s %-15s %-12s %-12s %-12s %-12s \n"+
+        String saleHeader = String.format("\n%-11s %-15s %-16s %-12s %-17s %-17s \n"+
                         "──────────────────────────────────────────────────────────────────────────────────\n",
                 "SALES TAX", "RECORDING FEE", "PROCESSING FEE", "TOTAL PRICE","FINANCE OPTION0","MONTHLY PAYMENT");
-        String saleData=String.format("%-12.2f %-12.2f %-12.2f %-12.2f %-12s %-12.2f  \n",
+        String saleData=String.format("%-11.2f %-15.2f %-16.2f %-12.2f %-17s %-17.2f  \n",
                 salesTax,recordingFee,processingFee,getTotalPrice(),financed,getMonthlyPayment());
 
 
-        return "***********************************************************************************\n"+
-                contractHeader+contractData+super.getVehicleSold()+saleHeader+saleData+
-                "***********************************************************************************\n";
+        return contractHeader+contractData+super.getVehicleSold()+saleHeader+saleData;
 
     }
 }
