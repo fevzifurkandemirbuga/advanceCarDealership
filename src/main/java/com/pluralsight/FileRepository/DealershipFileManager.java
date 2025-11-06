@@ -1,4 +1,7 @@
-package com.pluralsight;
+package com.pluralsight.FileRepository;
+
+import com.pluralsight.Model.Dealership;
+import com.pluralsight.Model.Vehicle;
 
 import java.io.*;
 

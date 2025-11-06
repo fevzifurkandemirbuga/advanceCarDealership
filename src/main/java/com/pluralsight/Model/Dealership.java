@@ -1,4 +1,6 @@
-package com.pluralsight;
+package com.pluralsight.Model;
+
+import com.pluralsight.FileRepository.ContractFileManager;
 
 import java.util.ArrayList;
 

@@ -1,6 +1,6 @@
-package com.pluralsight;
+package com.pluralsight.Model;
 
-public class SalesContract extends Contract{
+public class SalesContract extends Contract {
 
 
     private double salesTax;
@@ -8,7 +8,7 @@ public class SalesContract extends Contract{
     private double processingFee;
     private boolean financed;
 
-    public SalesContract(Vehicle vehicleSold,String date, String customerName, String customerEmail,boolean financed) {
+    public SalesContract(Vehicle vehicleSold, String date, String customerName, String customerEmail, boolean financed) {
 
 
 
